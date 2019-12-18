@@ -1,0 +1,8 @@
+applications:
+  - name: hotel-reservation-service
+    memory: 512M
+    instances: 1
+    path: target/hotel-reservation-jb-0.0.1-SNAPSHOT.jar
+    buildpack: https://github.com/cloudfoundry/java-buildpack
+    env:
+      SPRING_PROFILES_ACTIVE: development
